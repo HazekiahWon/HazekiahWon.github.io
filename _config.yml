@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Welcome to Hazekiah's place"
 title_separator          : "-"
 name                     : &name "Hazekiah Waegne"
 description              : "Technical blogs of Hazekiah Waegne."
