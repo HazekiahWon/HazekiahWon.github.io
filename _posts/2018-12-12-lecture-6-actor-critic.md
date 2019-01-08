@@ -1,3 +1,14 @@
+---
+title: "Lecture 6 Actor-Critic"
+categories:
+  - lecture-notes
+
+tags:
+  - DRL
+  - CS294-112
+  - notes
+author_profile: true
+---
 This is a half-way-done lecture note for [CS294-112 Lecture 6](http://rail.eecs.berkeley.edu/deeprlcourse/static/slides/lec-6.pdf).
 
 # p4
@@ -87,6 +98,6 @@ Online actor-critic differ from the previous algorithm as follows:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzQxNTc1OTMsLTIwODg3NDY2MTJdfQ
+eyJoaXN0b3J5IjpbLTE5MTQ2NjY1MzAsLTIwODg3NDY2MTJdfQ
 ==
 -->
