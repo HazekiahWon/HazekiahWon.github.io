@@ -33,9 +33,9 @@ Choose one that matches your installed CUDA. For example, I installed cuda-9.0, 
 
 ![]({{ site.url }}{{ site.baseurl }}/assets/images/20190117/cudnn.PNG)
 
-I would still recommend debian file as it's 
+I would still recommend debian file as it's really convenient. Here is the [official installation guide](http://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html) for cudnn.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NTA5ODg2OCwtNDk4MDE3MzAzLC0xNT
-E3NzY4MDIsMjAwNjIxNzA3OF19
+eyJoaXN0b3J5IjpbLTE5MjMzNjM5ODAsLTQ5ODAxNzMwMywtMT
+UxNzc2ODAyLDIwMDYyMTcwNzhdfQ==
 -->
