@@ -20,10 +20,15 @@ For the first line, just `tab` to complete your specific filename. `****` here m
 
 For the second line, you can find it after the execution of the first command line.
 
+![]({{ site.url }}{{ site.baseurl }}/assets/images/20190117/cuda_key.PNG)
+
 In my case, it's `/var/cuda-repo-9-0-local/7fa2af80.pub`.
 
 You may find your installation at `/usr/local`, where `cuda` folder has a symbolic link to the nearby `cuda-9.0` folder.
+
+# Installing CudNN
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MDU5NDU2MSwtNDk4MDE3MzAzLC0xNT
-E3NzY4MDIsMjAwNjIxNzA3OF19
+eyJoaXN0b3J5IjpbLTE1NzAyNzg4MDIsLTQ5ODAxNzMwMywtMT
+UxNzc2ODAyLDIwMDYyMTcwNzhdfQ==
 -->
