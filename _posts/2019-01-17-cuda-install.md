@@ -9,13 +9,13 @@ Remember to choose the debian file. It's less prone to failure.
 
 Type the following commands.
 ```bash
-sudo dpkg -i cuda-repo-ubuntu1604-9-0-local_9.0.176-1_amd64.deb
+sudo dpkg -i cuda-repo-ubuntu1604-9-0-local_****.deb
 sudo apt-key add /var/cuda-repo-<version>/7fa2af80.pub`
 sudo apt-get update
 sudo apt-get install cuda
 ```
 You may find your installation at `/usr/local`, where `cuda` folder has a symbolic link to the nearby `cuda-9.0` folder.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzA2NTY0MzEsLTE1MTc3NjgwMiwyMD
-A2MjE3MDc4XX0=
+eyJoaXN0b3J5IjpbLTQ5ODAxNzMwMywtMTUxNzc2ODAyLDIwMD
+YyMTcwNzhdfQ==
 -->
