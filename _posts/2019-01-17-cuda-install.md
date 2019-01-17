@@ -1,5 +1,5 @@
 # Installing CUDA
-## step 1 Download
+## step 1 
 All archived version of CUDA is provided [here](https://developer.nvidia.com/cuda-toolkit-archive). Choose one, for example, [cuda 9.0](https://developer.nvidia.com/cuda-90-download-archive).
 ![]({{ site.url }}{{ site.baseurl }}/assets/images/20190117/cuda_ins.PNG)
 
@@ -19,8 +19,6 @@ sudo apt-get install cuda
 For the first line, just `tab` to complete your specific filename. `****` here means version number. In my case, it's `9.0.176-1_amd64`.
 
 For the second line, you can find it after the execution of the first command line.
-
-![]({{ site.url }}{{ site.baseurl }}/assets/images/20190117/cuda_key.PNG)
 
 In my case, it's `/var/cuda-repo-9-0-local/7fa2af80.pub`.
 
@@ -45,11 +43,3 @@ I would still recommend debian file as it's really convenient. But remember to d
     `sudo dpkg -i libcudnn7-dev_7.0.3.11-1+cuda9.0_amd64.deb`
 
 Of course, use your file of specific version to replace the filenames above.
-
-
-    
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTA2MjI4NSwtNDk4MDE3MzAzLC0xNT
-E3NzY4MDIsMjAwNjIxNzA3OF19
--->
