@@ -33,7 +33,9 @@ Choose one that matches your installed CUDA. For example, I installed cuda-9.0, 
 
 ![]({{ site.url }}{{ site.baseurl }}/assets/images/20190117/cudnn.PNG)
 
-I would still recommend debian file as it's really convenient. But remember to download both the runtime library and the developer library. Here is the [official installation guide](http://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html) for cudnn. In the case of debian file, please refer to 2.3.2.
+I would still recommend debian file as it's really convenient. But remember to download both the runtime library and the developer library. Here is the [official installation guide](http://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html) for cudnn. 
+
+In the case of debian file, please refer to section 2.3.2.
 
 1.  Navigate to your  <cudnnpath>  directory containing cuDNN Debian file.
 2.  Install the runtime library, for example:
@@ -50,6 +52,6 @@ Of course, use your file of specific version to replace the filenames above.
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTA2MjI4NSwtNDk4MDE3MzAzLC0xNT
-E3NzY4MDIsMjAwNjIxNzA3OF19
+eyJoaXN0b3J5IjpbLTI2MzMyNDA3NiwtMTIxMDYyMjg1LC00OT
+gwMTczMDMsLTE1MTc3NjgwMiwyMDA2MjE3MDc4XX0=
 -->
