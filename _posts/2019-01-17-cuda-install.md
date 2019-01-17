@@ -27,8 +27,9 @@ In my case, it's `/var/cuda-repo-9-0-local/7fa2af80.pub`.
 You may find your installation at `/usr/local`, where `cuda` folder has a symbolic link to the nearby `cuda-9.0` folder.
 
 # Installing CudNN
-[CudNN](https://developer.nvidia.com/rdp/cudnn-download) requires you to log in before downloading. 
+[CudNN](https://developer.nvidia.com/rdp/cudnn-archive) require you to log in before downloading. 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MzQ3ODU0NywtNDk4MDE3MzAzLC0xNT
+eyJoaXN0b3J5IjpbLTUyMzEyMDQ1NCwtNDk4MDE3MzAzLC0xNT
 E3NzY4MDIsMjAwNjIxNzA3OF19
 -->
