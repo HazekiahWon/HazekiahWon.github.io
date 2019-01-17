@@ -29,8 +29,10 @@ You may find your installation at `/usr/local`, where `cuda` folder has a symbol
 # Installing CudNN
 CudNN normally requires you to log in before downloading, but [this link](https://developer.nvidia.com/rdp/cudnn-archive) seems to save the time.
 
+Choose one that matches your installed CUDA. For example, I installed cuda-9.0, so I install this version of cudnn.
+(img)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk5MjIwODI3LC00OTgwMTczMDMsLTE1MT
-c3NjgwMiwyMDA2MjE3MDc4XX0=
+eyJoaXN0b3J5IjpbLTI1OTQyMDk1NiwtNDk4MDE3MzAzLC0xNT
+E3NzY4MDIsMjAwNjIxNzA3OF19
 -->
