@@ -277,3 +277,6 @@ defaults:
       toc: true
       toc_label: "Table of Contents"
       toc_icon: "cog"
+
+head_scripts:
+  - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML # mathjax
