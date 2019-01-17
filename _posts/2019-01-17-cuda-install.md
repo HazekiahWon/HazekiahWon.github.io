@@ -18,10 +18,12 @@ sudo apt-get install cuda
 
 For the first line, just `tab` to complete your specific filename. `****` here means version number. In my case, it's `9.0.176-1_amd64`.
 
-For the second line, you can find it af
+For the second line, you can find it after the execution of the first command line.
+
+In my case, it's `/var/cuda-repo-9-0-local/7fa2af80.pub`.
 
 You may find your installation at `/usr/local`, where `cuda` folder has a symbolic link to the nearby `cuda-9.0` folder.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyODYyNjUxNywtNDk4MDE3MzAzLC0xNT
+eyJoaXN0b3J5IjpbLTc0MDU5NDU2MSwtNDk4MDE3MzAzLC0xNT
 E3NzY4MDIsMjAwNjIxNzA3OF19
 -->
