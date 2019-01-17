@@ -5,7 +5,8 @@ All archived version of CUDA is provided [here](https://developer.nvidia.com/cud
 
 Remember to choose the debian file. It's less prone to failure.
 ## step 2 Install
-`cd` your download path. It won't matter where you install the 
+`cd` your download path. It won't matter where you install the debian file, so no need to `mv` the file.
+
 Type the following commands.
 ```bash
 sudo dpkg -i cuda-repo-ubuntu1604-9-0-local_9.0.176-1_amd64.deb
@@ -15,6 +16,6 @@ sudo apt-get install cuda
 ```
 You may find your installation at `/usr/local`, where `cuda` folder has a symbolic link to the nearby `cuda-9.0` folder.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDMxMjYxMTIsLTE1MTc3NjgwMiwyMD
+eyJoaXN0b3J5IjpbLTIwMzA2NTY0MzEsLTE1MTc3NjgwMiwyMD
 A2MjE3MDc4XX0=
 -->
