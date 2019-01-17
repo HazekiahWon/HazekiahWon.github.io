@@ -14,8 +14,9 @@ sudo apt-key add /var/cuda-repo-<version>/7fa2af80.pub`
 sudo apt-get update
 sudo apt-get install cuda
 ```
+Note that, for the first line, just `tab` to complete your specific filename. `****` here means 
 You may find your installation at `/usr/local`, where `cuda` folder has a symbolic link to the nearby `cuda-9.0` folder.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5ODAxNzMwMywtMTUxNzc2ODAyLDIwMD
-YyMTcwNzhdfQ==
+eyJoaXN0b3J5IjpbLTk1NDcxOTkxMywtNDk4MDE3MzAzLC0xNT
+E3NzY4MDIsMjAwNjIxNzA3OF19
 -->
