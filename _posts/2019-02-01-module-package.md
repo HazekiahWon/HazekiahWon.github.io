@@ -1,5 +1,5 @@
 ---
-title: "Module and Package in Python3"
+title: "Program Organization in Python3: Modules and Packages"
 categories:
   - Tutotials
 
@@ -7,7 +7,6 @@ tags:
   - python3
 author_profile: true
 ---
-# Program Organization in Python3
 Module and Package are ways to organize complex programs in Python3.
 A Module is recognized as one '.py' file, and a Package is recognized as one directory 
 that includes multiple modules or sub-packages. Package is higher level organization 
@@ -16,10 +15,10 @@ consists of multiple classes or functions, which are the basic units
 of programs.
 
 ## Module
-As said, Module is a '.py' file wherein classes and functions towards
-identical functionality are written.
+As said, Module is a '.py' file wherein classes and functions are written towards
+identical functionality .
 
-### import modules
+### Importing modules
 Global variables is defined in the context of `namespace`. This is in essence a symbol table. 
 Every module has its own global symbol table, in which all the names are recorded -- classes, 
 functions and variables names.
@@ -39,7 +38,8 @@ from math import sqrt
 - The first way import the namespace of 'math', and access any member of it via `math.*`.
 - The second way import a namespace of 'mathematics' as an alias for 'math'.  
 we can access members of 'math' via 'mathematics', as 'mathematics' is now bound for
-'math' in the local symbol table. This kind of alias is often intended
+'math' in the local symbol table.  
+This kind of alias is often intended
 for : 1) abbreviations, 2) avoid the conflict with the same names in current namespace, 
 e.g., another variable 'math'
 - the third way only imports the function (or class, variable) into the current namespace.  
@@ -73,12 +73,12 @@ ones defined in the local namespace.
 ### `__pycache__`
 `__pycache__` is a cache directory for the interpreter to speed up compiling. All it 
 does is to store the compiled bytecode of any module upon its first call. During the 
-next and after call, the interpreter determine whether to compile a module and stores
+next and after call, the interpreter determines whether to compile a module and stores
 it by comparing the modified time of the bytecode '.pyc' file with that of the '.py' file
 -- if python file is modified after the bytecode file then re-compile otherwise do not.
 
 ### `__name__`
-`__name__` is often used for testing. When a module is imported, `__name__` is set as 
+`__name__` is often (explicitly) used for testing. When a module is imported, `__name__` is set as 
 the module's name. When it is run by the interpreter, `__name__` is set `__main__`.
 
 ```python
