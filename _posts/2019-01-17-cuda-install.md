@@ -38,8 +38,6 @@ CudNN normally requires you to log in before downloading, but [this link](https:
 
 Choose one that matches your installed CUDA. For example, I installed cuda-9.0, so I install this version of cudnn.
 
-![]({{ site.baseurl }}/assets/images/20190117/cudnn.PNG)
-
 I would still recommend debian file as it's really convenient. But remember to download both the runtime library and the developer library. Here is the [official installation guide](http://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html) for cudnn. In the case of debian file, please refer to 2.3.2.
 
 1.  Navigate to your  <cudnnpath>  directory containing cuDNN Debian file.
@@ -52,3 +50,6 @@ I would still recommend debian file as it's really convenient. But remember to d
     `sudo dpkg -i libcudnn7-dev_7.0.3.11-1+cuda9.0_amd64.deb`
 
 Of course, use your file of specific version to replace the filenames above.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE4NTIxMzM5OTFdfQ==
+-->
