@@ -10,8 +10,8 @@ author_profile: true
 # Installing CUDA
 ## step 1 Download
 All archived version of CUDA is provided [here](https://developer.nvidia.com/cuda-toolkit-archive). Choose one, for example, [cuda 9.0](https://developer.nvidia.com/cuda-90-download-archive).
-![]({{ site.url }}{{ site.baseurl }}/assets/images/20190117/cuda_ins.PNG)
 
+![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/20190117/cuda_ins.png){: .align-center}
 Remember to choose the debian file. It's less prone to failure.
 ## step 2 Install
 `cd` your download path. It won't matter where you install the debian file, so no need to `mv` the file.
