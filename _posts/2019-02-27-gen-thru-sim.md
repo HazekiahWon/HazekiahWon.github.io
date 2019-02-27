@@ -10,16 +10,16 @@ tags:
 author_profile: true
 ---
 # Current issues and motivation
-Deep learning requires large quantity of data to achieve performance. DRL has the following challenges:
-1) the policy is meant to be used in the real-world settings, but collecting real-world data is expensive.  
-2) policy learning is often performed in simulated environments but there are systematic 
+Deep learning requires large quantity of data to achieve performance. DRL has the following challenges:  
+1. the policy is meant to be used in the real-world settings, but collecting real-world data is expensive.   
+2. policy learning is often performed in simulated environments but there are systematic
 differences between simulated rendering and the real-world, because some factors are hard to model.
 
 As a result, policy learned using only real-world data easily overfits while policy learned using only simulation data does not transfer to the real-world settings. 
 
 What are the benefits for policy learning with two types of data?  
-1) simulation data is of large quantity.  (buf fails at learning dynamics)
-2) real-world data better reflects the dynamics. (but fails at its quantity)
+1. simulation data is of large quantity.  (but fails at learning dynamics)  
+2. real-world data better reflects the dynamics. (but fails at its quantity)
 
 These motivates the author to combine the two kinds of data.
 
@@ -55,24 +55,22 @@ In the real-world phase, the author transfers knowledge from simulation via the 
 module. However, they claim to fix the parameters of the perception module without further finetuning on real-world data, suggesting a result of overfitting. 
 
 For the control system in the real-world phase, the author sparkly proposes an action-conditioned reward predictor that is meant to model the dynamics, not of the environment but of the reward. 
-
+![]({{site.baseurl}}/assets/images/20190227/pred.png)
 (This is surprising but kinda make sense because, the choice of action is guided by the cumulative returns in the q-learning, and the dynamics of environment is inherently reflected by the reward, because the rewards tell us if the following states are good or bad.)
 
 The reward predictor is similar to the q-value in the sense that they both relate with rewards, but differs in the form of rewards. The predictor ingests a state and an action sequence in a future horizon, and outputs a reward sequence of that horizon, while the q-value is the summation of the reward sequence.
 
 The architecture for the predictor is simple. It consists of :
-1) a perception module, which is directly set the same as in the simulation phase, as aforementioned.  
-2) an action module, learned with the real-world data.
-3) a value module, which combines the hidden vectors given by the perception module and the action module (state and action), learns its parameters on the real-world data, and outputs a single-step reward.   
+1. a perception module, which is directly set the same as in the simulation phase, as aforementioned.  
+2. an action module, learned with the real-world data.  
+3. a value module, which combines the hidden vectors given by the perception module and the action module (state and action), learns its parameters on the real-world data, and outputs a single-step reward.   
+
 By the way, the q-network takes a similar architecture as such.
 
 Using such architecture, the predictor can give a reward sequence by adopting an RNN. In other words, the value module takes the features of the same current state and time-varying action **iteratively** to produce a sequence of rewards along the horizon.
-
+![]({{site.baseurl}}/assets/images/20190227/loss.png)
 The learning of the predictor is accomplished in a supervised style. We minimize the summation of the squares over the horizon on the real-world dataset. Besides, the predictor is used in a model-based fashion -- with CEM and MPC. CEM fits a distribution which approximates the region of higher region, it is the planner that gives the action. MPC here acts as a controller. It runs the planner to obtain an action sequence but only executes the first at each time step. This fashion has nothing to do with learning.
 
 ## questions
 However,  currently I am confused about how CEM is combined with the predictor. CEM fits a distribution in the action space, which is the region of higher rewards, and gives action sequence via sampling during testing. So my question is how is the predictor used during testing, since CEM itself already outputs the actions.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyOTA5ODc5MF19
--->
+![]({{site.baseurl}}/assets/images/20190227/ques.png)
