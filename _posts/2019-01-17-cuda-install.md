@@ -11,7 +11,7 @@ author_profile: true
 ## step 1 Download
 All archived version of CUDA is provided [here](https://developer.nvidia.com/cuda-toolkit-archive). Choose one, for example, [cuda 9.0](https://developer.nvidia.com/cuda-90-download-archive).
 
-![image-center]({{ site.baseurl }}/assets/images/20190117/cuda_ins.png){: .align-center}
+![image-center]({{ site.baseurl }}/assets/images/20190117/cuda_ins.PNG){: .align-center}
 Remember to choose the debian file. It's less prone to failure.
 ## step 2 Install
 `cd` your download path. It won't matter where you install the debian file, so no need to `mv` the file.
@@ -38,7 +38,7 @@ CudNN normally requires you to log in before downloading, but [this link](https:
 
 Choose one that matches your installed CUDA. For example, I installed cuda-9.0, so I install this version of cudnn.
 
-![]({{ site.baseurl }}/assets/images/20190117/cudnn.png)
+![]({{ site.baseurl }}/assets/images/20190117/cudnn.PNG)
 
 I would still recommend debian file as it's really convenient. But remember to download both the runtime library and the developer library. Here is the [official installation guide](http://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html) for cudnn. In the case of debian file, please refer to 2.3.2.
 
