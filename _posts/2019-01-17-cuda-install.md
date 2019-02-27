@@ -4,7 +4,7 @@ categories:
   - Tutorials
 
 tags:
-  - CUDA, installation
+  - [CUDA, installation]
 author_profile: true
 ---
 # Installing CUDA

@@ -3,10 +3,10 @@ title: "Generalization through Simulation:
 Integrating Simulated and Real Data into Deep Reinforcement Learning  
 for Vision-Based Autonomous Flight"
 categories:
-  - notes
+  - paper-notes
 
 tags:
-  - DRL, sim2real
+  - [DRL, sim2real]
 author_profile: true
 ---
 # Current issues and motivation
